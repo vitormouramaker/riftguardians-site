@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Support and frequently asked questions — Rift Guardians</title>
-<meta name="description" content="Rift Guardians FAQ: the account tied to your computer, playing offline, server maintenance, PvP, where the save is and how to report a bug.">
+<meta name="description" content="Rift Guardians FAQ: switching computers with the recovery code, playing offline, server maintenance, PvP, where the save is and how to report a bug.">
 <meta name="referrer" content="no-referrer">
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#0e1513">
@@ -36,9 +36,21 @@
 <h3 id="how-is-the-account-created">How is the account created?</h3>
 <p>The first time you open the game with an internet connection and accept the terms, the game creates a <strong>key</strong> on your computer and registers an account on the server with it. We do not ask for an e-mail or a password. Your display name starts as "Guardião" ("Guardian") and can be changed in your profile.</p>
 <h3 id="i-switched-computers-or-reinstalled-windows-what-about-my-account">I switched computers or reinstalled Windows. What about my account?</h3>
-<p>Today the account is <strong>tied to the computer (and the Windows user) where it was created</strong>. The key is stored encrypted for that Windows user; copying the files to another computer does not bring the account along.</p>
-<p>That means that <strong>if you reinstall Windows, switch machines or lose access to that Windows user, the online account cannot be recovered today</strong>. We cannot give it back by e-mail, because we keep no data that proves who you are.</p>
-<p>We are working on codes to transfer and recover an account. <strong>They do not exist yet and we have no date to promise.</strong> When they do, we will announce it in the <a href="news.html">News</a>.</p>
+<p>The account lives on the computer (and the Windows user) where it was created: the key is stored encrypted for that user, and copying the files to another computer does not bring the account along. To take the account somewhere else there are two codes, created in the game under <strong>Settings → Online account → Protect the account</strong>:</p>
+<ul><li><strong>Recovery code</strong> (7 groups of 4 characters): it does not expire. Create it and <strong>keep it outside the computer</strong> — on paper or in a password manager. It is what brings the account back if the computer is wiped, replaced or lost.</li><li><strong>Transfer code</strong> (4 groups of 4 characters): valid for 10 minutes. It is for switching computers right now, with both at hand.</li></ul>
+<p>On the other computer, open the game and choose <strong>I accept and already have an account</strong> on the welcome screen (or <strong>Settings → Online account → I already have an account</strong>) and enter the code. You can paste it with or without dashes.</p>
+<p>Good to know:</p>
+<ul><li>The code appears <strong>once</strong> on screen. We do not keep it and cannot show it again. Lost it? Create another one (the previous one stops working).</li><li><strong>Whoever has the code takes the account.</strong> Do not show it or send it to anyone. We never ask for your code.</li><li>Each code works once. After using the recovery code, create a new one on the new computer.</li><li><strong>Accounts are never merged.</strong> If the computer where you enter the code already has an account with progress, the game warns you and asks for confirmation: it is replaced by the account of the code.</li><li>When the account signs in on the new computer, the old one leaves it.</li></ul>
+<h3 id="i-lost-the-computer-and-had-no-recovery-code">I lost the computer and had no recovery code.</h3>
+<p>In that case <strong>the account cannot be recovered</strong>. We keep no e-mail or any data that proves who you are, so we have no way of handing an account back to whoever asks. You can start a new account — and create the recovery code right at the start.</p>
+<h3 id="the-game-says-this-account-moved-to-another-computer">The game says "This account moved to another computer".</h3>
+<p>Someone used a recovery or transfer code of this account on another computer (usually you). The game does not create a new account on its own; it asks what to do: <strong>recover with a code</strong> (brings the account back to this computer), <strong>start a new account on this computer</strong> (from scratch) or <strong>play only on this computer</strong> (no online account). If it was not you, write to the contact address and tell us your friend code.</p>
+<h3 id="the-game-says-invalid-code-or-too-many-attempts">The game says "Invalid code" or "Too many attempts".</h3>
+<ul><li>Check the characters: after the second group there is no <strong>0, 1, I or O</strong>.</li><li>The transfer code expires in 10 minutes; each code works only once; creating a new code voids the previous one of the same kind.</li><li>After several wrong attempts, the server blocks new attempts for that account for up to an hour — even with the right code. Wait for the time the game shows.</li></ul>
+<h3 id="the-game-did-not-accept-my-name-or-my-name-was-changed">The game did not accept my name, or my name was changed.</h3>
+<p>The display name has 3 to 20 characters, using only letters, numbers, space, period, hyphen and underscore, and it cannot impersonate the game's team. A name that breaks the <a href="conduct.html">Rules of conduct</a> may be replaced with a neutral name by moderation; in that case the game tells you and name changes are locked for a while, with the date shown on the Profile screen.</p>
+<h3 id="the-game-says-online-modes-suspended">The game says "Online modes suspended".</h3>
+<p>Moderation has suspended the account's online PvP, challenges and friend requests. The game shows until when and the reason, under <strong>Settings → Online account</strong>. The campaign, the collection and the mail keep working. If you think it was a mistake, write to the contact address with your friend code.</p>
 <h3 id="does-reinstalling-or-updating-the-game-delete-my-account">Does reinstalling or updating the game delete my account?</h3>
 <p>No. Your progress and the account key live outside the game folder, in your Windows user's data folder:</p>
 <pre tabindex="0"><code>%USERPROFILE%\AppData\LocalLow\Vitor Moura\Rift Guardians</code></pre>
@@ -57,6 +69,8 @@
 <h2 id="server">Server</h2>
 <h3 id="the-game-says-server-under-maintenance-server-full-or-online-pvp-is-paused">The game says "Server under maintenance", "Server full" or "Online PvP is paused".</h3>
 <p>That is a notice from us, not a fault in your computer. The campaign keeps working and your progress is uploaded when the server is back. See <a href="status.html">Server status</a> for more.</p>
+<h3 id="the-game-says-server-full-trying-again-or-queue-full-right-now">The game says "Server full — trying again" or "Queue full right now".</h3>
+<p>The server has a limit of players connected at the same time. When it fills up, whoever arrives waits: the campaign goes on as usual on your computer, progress is kept and sent when a spot opens, and the game tries again on its own. "Queue full" means only online PvP matches are at the limit; try again shortly.</p>
 <h3 id="the-game-tells-me-to-update">The game tells me to update.</h3>
 <p>A new version is out. Download it from the <a href="download.html">Download page</a> and install it over the old one: progress is not deleted. When an update changes the rules of the game, online modes only come back after you update; the campaign stays playable.</p>
 <h3 id="i-cannot-get-into-online-pvp-matches">I cannot get into online PvP matches.</h3>
