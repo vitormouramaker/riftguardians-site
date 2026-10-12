@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support and frequently asked questions — Rift Guardians</title>
+<meta name="description" content="Rift Guardians FAQ: the account tied to your computer, playing offline, server maintenance, PvP, where the save is and how to report a bug.">
+<meta name="referrer" content="no-referrer">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1513">
+<link rel="icon" href="../static/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../static/img/icon_32.png">
+<link rel="apple-touch-icon" href="../static/img/icon_256.png">
+<link rel="stylesheet" href="../static/css/site.css">
+</head>
+<body class="pagina-suporte">
+<a class="pular" href="#conteudo">Skip to content</a>
+<p class="rascunho" role="note">Pre-release: 3 configuration values are missing (see site/README.md).</p>
+<header class="topo">
+  <div class="largura topo-linha">
+    <a class="marca" href="index.html" aria-label="Rift Guardians — home page">
+      <img src="../static/img/symbol.png" width="32" height="32" alt="">
+      <span>Rift Guardians</span>
+    </a>
+    <nav aria-label="Main menu">
+      <ul class="menu"><li><a href="index.html">Home</a></li><li><a href="download.html">Download</a></li><li><a href="how-to-play.html">How to play</a></li><li><a href="news.html">News</a></li><li><a href="support.html" aria-current="page">Support</a></li></ul>
+    </nav>
+    <a class="idioma" href="../suporte.html" lang="pt-BR" hreflang="pt-BR" aria-label="Ler esta página em português">Português</a>
+  </div>
+</header>
+<main id="conteudo" class="largura" tabindex="-1">
+<h1 id="support-and-frequently-asked-questions">Support and frequently asked questions</h1>
+<p>Rift Guardians is made and maintained by one person. We reply as soon as we can; a message sent in the middle of the night (Brazil time) waits until the next day.</p>
+<ul><li>E-mail: <a href="mailto:contato@riftguardians.tech">contato@riftguardians.tech</a></li><li>Discord: <span class="falta">join the community <mark>{{DISCORD_URL}}</mark></span></li><li><a href="status.html">Server status</a></li></ul>
+<h2 id="conta">Account</h2>
+<h3 id="how-is-the-account-created">How is the account created?</h3>
+<p>The first time you open the game with an internet connection and accept the terms, the game creates a <strong>key</strong> on your computer and registers an account on the server with it. We do not ask for an e-mail or a password. Your display name starts as "Guardião" ("Guardian") and can be changed in your profile.</p>
+<h3 id="i-switched-computers-or-reinstalled-windows-what-about-my-account">I switched computers or reinstalled Windows. What about my account?</h3>
+<p>Today the account is <strong>tied to the computer (and the Windows user) where it was created</strong>. The key is stored encrypted for that Windows user; copying the files to another computer does not bring the account along.</p>
+<p>That means that <strong>if you reinstall Windows, switch machines or lose access to that Windows user, the online account cannot be recovered today</strong>. We cannot give it back by e-mail, because we keep no data that proves who you are.</p>
+<p>We are working on codes to transfer and recover an account. <strong>They do not exist yet and we have no date to promise.</strong> When they do, we will announce it in the <a href="news.html">News</a>.</p>
+<h3 id="does-reinstalling-or-updating-the-game-delete-my-account">Does reinstalling or updating the game delete my account?</h3>
+<p>No. Your progress and the account key live outside the game folder, in your Windows user's data folder:</p>
+<pre tabindex="0"><code>%USERPROFILE%\AppData\LocalLow\Vitor Moura\Rift Guardians</code></pre>
+<p>Updating, reinstalling or moving the game folder does not touch that folder. If you delete that folder, you lose the local progress and this computer's account key.</p>
+<h3 id="how-do-i-see-export-or-delete-my-data">How do I see, export or delete my data?</h3>
+<p>In the game, under <strong>Settings → Online account</strong>:</p>
+<ul><li><strong>Download my data</strong> writes a file with everything the server stores about your account.</li><li><strong>Delete my online account</strong> erases the account from the server, after two confirmations. It cannot be undone.</li></ul>
+<p>More details in the <a href="privacy.html">Privacy Policy</a>.</p>
+<h2 id="playing-offline">Playing offline</h2>
+<h3 id="can-i-play-without-an-internet-connection">Can I play without an internet connection?</h3>
+<p>Yes. The whole campaign works offline. What you play goes into a queue on your computer and is sent to the server when the connection returns.</p>
+<h3 id="what-needs-the-internet">What needs the internet?</h3>
+<p>The online account, online PvP, friends, challenges and in-game mail.</p>
+<h3 id="i-played-offline-and-my-progress-did-not-show-up-in-the-online-account">I played offline and my progress did not show up in the online account.</h3>
+<p>Sending happens automatically when the game can reach the server. Open the game with an internet connection and wait a little in the lobby; under <strong>Settings → Online account</strong> you can see the queue and ask it to synchronize. The server checks every stage by replaying the match, so very old stages, or stages from an earlier version of the game, may be refused.</p>
+<h2 id="server">Server</h2>
+<h3 id="the-game-says-server-under-maintenance-server-full-or-online-pvp-is-paused">The game says "Server under maintenance", "Server full" or "Online PvP is paused".</h3>
+<p>That is a notice from us, not a fault in your computer. The campaign keeps working and your progress is uploaded when the server is back. See <a href="status.html">Server status</a> for more.</p>
+<h3 id="the-game-tells-me-to-update">The game tells me to update.</h3>
+<p>A new version is out. Download it from the <a href="download.html">Download page</a> and install it over the old one: progress is not deleted. When an update changes the rules of the game, online modes only come back after you update; the campaign stays playable.</p>
+<h3 id="i-cannot-get-into-online-pvp-matches">I cannot get into online PvP matches.</h3>
+<ul><li>Check the <a href="status.html">Server status</a>.</li><li>PvP uses <strong>UDP port 7778</strong>. School, work or internet-café networks, and some firewalls, block that kind of traffic. Try another network if you can.</li><li>Online modes open up with your account level; the game shows the level required on each card.</li></ul>
+<h3 id="my-connection-dropped-in-the-middle-of-a-pvp-match">My connection dropped in the middle of a PvP match.</h3>
+<p>You have 90 seconds to return: open the game and use the "Return to the match" card in the lobby. After that the match counts as abandoned, and repeated abandons increase the wait to join the queue.</p>
+<h2 id="installation">Installation</h2>
+<h3 id="windows-showed-a-blue-warning-when-i-opened-the-game">Windows showed a blue warning when I opened the game.</h3>
+<p>That is expected. See <a href="windows-warning.html">The Windows warning</a>.</p>
+<h3 id="my-antivirus-blocked-the-game">My antivirus blocked the game.</h3>
+<p>Do not turn off your antivirus. See <a href="windows-warning.html#se-o-antivirus-reclamar">what to do</a> and let us know.</p>
+<h3 id="how-do-i-uninstall">How do I uninstall?</h3>
+<p>In <strong>Windows Settings → Apps → Installed apps</strong>, look for Rift Guardians. If you used the portable version (.zip), just delete the game folder. Uninstalling does not delete the account on the server: for that, use <strong>Delete my online account</strong> inside the game before uninstalling.</p>
+<h2 id="how-to-report-a-bug">How to report a bug</h2>
+<p>A good report saves several back-and-forth messages. Send to the e-mail or to Discord:</p>
+<ol><li><strong>The game version</strong>, shown in the corner of the lobby and in Settings.</li><li><strong>What you were doing</strong>: stage, commander, mode (campaign, Heroic, Duel, Arena).</li><li><strong>What happened</strong> and what you expected to happen.</li><li>A <strong>screenshot</strong>, if you can.</li><li>If the game closed by itself or froze, the log file <code>Player.log</code>, which is in the data folder shown above.</li></ol>
+<p>Before sending <code>Player.log</code>, be aware that it contains technical information about your computer (graphics card model, Windows version, folder paths that include your user name). Do not send the files <code>online.json</code> or <code>profiles.db</code>: they do not help with diagnosis and they contain your account's key and progress.</p>
+<h2 id="reporting-an-offensive-name">Reporting an offensive name</h2>
+<p>Send the player's <strong>friend code</strong> or name to the contact e-mail, with a screenshot if possible. See the <a href="conduct.html">Code of conduct</a>.</p>
+
+</main>
+<footer class="rodape">
+  <div class="largura">
+    <ul class="rodape-links"><li><a href="windows-warning.html">Windows warning</a></li><li><a href="status.html">Server status</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms of use</a></li><li><a href="conduct.html">Code of conduct</a></li><li><a href="credits.html">Credits and licenses</a></li></ul>
+    <p>Contact: <a href="mailto:contato@riftguardians.tech">contato@riftguardians.tech</a></p>
+    <p class="fraco">Rift Guardians is a free game made by Vitor Moura. This site uses no cookies, ads or trackers.</p>
+    <p class="fraco">© 2026 Vitor Moura</p>
+  </div>
+</footer>
+
+</body>
+</html>

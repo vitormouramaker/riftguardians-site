@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ajuda: o aviso do Windows — Rift Guardians</title>
+<meta name="description" content="Por que o Windows mostra um aviso azul ao abrir o Rift Guardians, como continuar, como conferir o arquivo e o que fazer se o antivírus reclamar.">
+<meta name="referrer" content="no-referrer">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1513">
+<link rel="icon" href="static/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="static/img/icon_32.png">
+<link rel="apple-touch-icon" href="static/img/icon_256.png">
+<link rel="stylesheet" href="static/css/site.css">
+</head>
+<body class="pagina-ajuda-windows">
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<p class="rascunho" role="note">Pré-publicação: faltam 3 valores de configuração (veja site/README.md).</p>
+<header class="topo">
+  <div class="largura topo-linha">
+    <a class="marca" href="index.html" aria-label="Rift Guardians — página inicial">
+      <img src="static/img/symbol.png" width="32" height="32" alt="">
+      <span>Rift Guardians</span>
+    </a>
+    <nav aria-label="Menu principal">
+      <ul class="menu"><li><a href="index.html">Início</a></li><li><a href="baixar.html">Baixar</a></li><li><a href="como-jogar.html">Como jogar</a></li><li><a href="novidades.html">Novidades</a></li><li><a href="suporte.html">Suporte</a></li></ul>
+    </nav>
+    <a class="idioma" href="en/windows-warning.html" lang="en" hreflang="en" aria-label="Read this page in English">English</a>
+  </div>
+</header>
+<main id="conteudo" class="largura" tabindex="-1">
+<h1 id="o-aviso-do-windows-ao-abrir-o-jogo">O aviso do Windows ao abrir o jogo</h1>
+<h2 id="resumo">Resumo</h2>
+<p>O Windows mostra um aviso ao abrir o instalador (ou o jogo) pela primeira vez porque o Rift Guardians é um jogo gratuito feito por uma pessoa e não tem <strong>assinatura digital</strong>, que é um serviço pago todo ano. O aviso não diz que há vírus: diz que o Windows ainda não conhece este arquivo.</p>
+<p>Para continuar: clique em <strong>Mais informações</strong> e depois em <strong>Executar assim mesmo</strong>.</p>
+<p>Se preferir não confiar só na nossa palavra, você pode <a href="#conferir">conferir o código SHA-256 do arquivo</a> ou <a href="#itch">instalar pelo aplicativo do itch.io</a>.</p>
+<h2 id="passo-a-passo">Passo a passo</h2>
+<div class="passos">
+<figure><img src="static/img/aviso_windows_1.png" width="820" height="530" loading="lazy" alt="Desenho da primeira tela do aviso: janela azul com o título O Windows protegeu o computador, o texto Mais informações destacado e o botão Não executar."><figcaption><strong>Tela 1.</strong> Janela azul "O Windows protegeu o computador". Só aparece o botão "Não executar". Clique no texto pequeno <strong>Mais informações</strong>.</figcaption></figure>
+<figure><img src="static/img/aviso_windows_2.png" width="820" height="530" loading="lazy" alt="Desenho da segunda tela do aviso: aparecem o nome do aplicativo, Fornecedor desconhecido e o botão Executar assim mesmo destacado."><figcaption><strong>Tela 2.</strong> Aparecem o nome do arquivo, "Fornecedor desconhecido" e o botão <strong>Executar assim mesmo</strong>. Clique nele.</figcaption></figure>
+</div>
+<p class="foto-real">As imagens acima são <strong>desenhos ilustrativos</strong>, não capturas de tela. Vamos trocá-las por fotos reais depois do teste em computadores com o Windows recém-instalado. Os textos podem variar um pouco conforme a versão do Windows e o idioma.</p>
+<p>Antes disso, o navegador também pode avisar que "este arquivo não é baixado com frequência". Se isso acontecer, escolha <strong>Manter</strong> (o texto muda conforme o navegador).</p>
+<h2 id="por-que-o-aviso-aparece">Por que o aviso aparece</h2>
+<ul><li>O filtro do Windows (Microsoft Defender SmartScreen) confia nos programas pelo <strong>histórico</strong>: um arquivo novo, que pouca gente abriu, é mostrado como "não reconhecido".</li><li>Um programa <strong>assinado</strong> leva o nome de quem publicou e acumula esse histórico de uma versão para a outra. A assinatura é um certificado pago e renovado todo ano. O Rift Guardians é gratuito e não tem receita, então hoje não temos esse certificado.</li><li>Sem assinatura, <strong>cada versão nova é um arquivo novo</strong> para o Windows. O aviso volta quando você atualiza.</li><li>"Fornecedor desconhecido" quer dizer exatamente isso: o arquivo não tem assinatura. Não é resultado de uma análise do conteúdo.</li></ul>
+<p>O aviso existe por um bom motivo e não pedimos que você o ignore sem pensar. Baixe o jogo só pelos endereços da <a href="baixar.html">página Baixar</a> e, se quiser ter certeza, confira o arquivo.</p>
+<h2 id="conferir">Como conferir o arquivo (SHA-256)</h2>
+<p>O SHA-256 é um código calculado a partir do arquivo. Se um único byte mudar, o código muda. Publicamos o código de cada arquivo na <a href="baixar.html">página Baixar</a>.</p>
+<ol><li>Abra a pasta onde o arquivo foi baixado (normalmente <strong>Downloads</strong>).</li><li>Clique com o botão direito num espaço vazio da pasta e escolha <strong>Abrir no Terminal</strong> (no Windows 10: segure Shift, clique com o botão direito e escolha <strong>Abrir janela do PowerShell aqui</strong>).</li><li>Digite o comando mostrado logo abaixo, trocando o nome se o seu arquivo for outro, e aperte Enter.</li><li>Compare o código que aparece na coluna <strong>Hash</strong> com o da página Baixar. Maiúsculas e minúsculas não importam.</li></ol>
+<pre tabindex="0"><code>Get-FileHash .\RiftGuardians-0.9.0-setup.exe -Algorithm SHA256</code></pre>
+<p>Se o código for <strong>igual</strong>, o arquivo é exatamente o que publicamos. Se for <strong>diferente</strong>, não abra: apague, baixe de novo pelo link oficial e, se continuar diferente, <a href="suporte.html">fale com a gente</a>.</p>
+<h2 id="itch">Instalar pelo aplicativo do itch.io</h2>
+<p>O <a href="https://itch.io/app" rel="noopener noreferrer">aplicativo do itch.io</a> é um programa do próprio itch.io que baixa, instala e atualiza jogos. Você instala o aplicativo uma vez, procura o Rift Guardians nele e clica em instalar.</p>
+<p>Ainda não medimos se o aviso do Windows deixa de aparecer para quem instala por esse caminho. Quando tivermos testado, esta página dirá o resultado.</p>
+<h2 id="nao-ha-botao-para-continuar">Não há botão para continuar</h2>
+<p>Em computadores com Windows 11 e o <strong>Controle Inteligente de Aplicativos</strong> ligado, o Windows pode bloquear o jogo sem oferecer o botão "Executar assim mesmo". Esse recurso bloqueia programas sem assinatura que ainda não são conhecidos.</p>
+<p>Só você pode decidir o que fazer com as proteções do seu computador. O recurso fica em <strong>Segurança do Windows → Controle de aplicativos e do navegador → Controle Inteligente de Aplicativos</strong>. Em algumas versões do Windows, depois de desligado ele não pode ser ligado de novo sem reinstalar o sistema — leia a explicação que o próprio Windows mostra antes de mexer. Se não quiser mudar isso, não mude: esperamos conseguir assinar o jogo no futuro.</p>
+<h2 id="se-o-antivirus-reclamar">Se o antivírus reclamar</h2>
+<p>Jogos feitos na Unity e sem assinatura às vezes são marcados por engano.</p>
+<ul><li><strong>Não desligue o antivírus.</strong> Nunca vamos pedir isso.</li><li>Confira o <a href="#conferir">SHA-256</a> do arquivo que você baixou.</li><li>Experimente a <strong>versão portátil (.zip)</strong> da <a href="baixar.html">página Baixar</a>: ela costuma dar menos alarme falso que o instalador.</li><li><a href="suporte.html">Avise a gente</a> dizendo qual antivírus, qual mensagem e qual versão do jogo. Com isso enviamos o arquivo ao fabricante do antivírus como detecção incorreta.</li></ul>
+<h2 id="resumo-honesto">Resumo honesto</h2>
+<ul><li>O aviso azul vai aparecer para todo mundo enquanto o jogo não tiver assinatura digital.</li><li>Ele volta a cada versão nova.</li><li>Você não é obrigado a continuar. Se ficar em dúvida, não instale e pergunte no <a href="suporte.html">suporte</a>.</li></ul>
+
+</main>
+<footer class="rodape">
+  <div class="largura">
+    <ul class="rodape-links"><li><a href="ajuda-windows.html">Aviso do Windows</a></li><li><a href="estado.html">Estado do servidor</a></li><li><a href="privacidade.html">Privacidade</a></li><li><a href="termos.html">Termos de uso</a></li><li><a href="conduta.html">Regras de conduta</a></li><li><a href="creditos.html">Créditos e licenças</a></li></ul>
+    <p>Contato: <a href="mailto:contato@riftguardians.tech">contato@riftguardians.tech</a></p>
+    <p class="fraco">Rift Guardians é um jogo gratuito feito por Vitor Moura. Este site não usa cookies, anúncios nem rastreadores.</p>
+    <p class="fraco">© 2026 Vitor Moura</p>
+  </div>
+</footer>
+
+</body>
+</html>

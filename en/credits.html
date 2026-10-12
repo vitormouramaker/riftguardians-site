@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Credits and licences — Rift Guardians</title>
+<meta name="description" content="Who made Rift Guardians, how the art, sound and code were made (including the use of AI), and the licences of third-party components.">
+<meta name="referrer" content="no-referrer">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1513">
+<link rel="icon" href="../static/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../static/img/icon_32.png">
+<link rel="apple-touch-icon" href="../static/img/icon_256.png">
+<link rel="stylesheet" href="../static/css/site.css">
+</head>
+<body class="pagina-creditos">
+<a class="pular" href="#conteudo">Skip to content</a>
+<p class="rascunho" role="note">Pre-release: 3 configuration values are missing (see site/README.md).</p>
+<header class="topo">
+  <div class="largura topo-linha">
+    <a class="marca" href="index.html" aria-label="Rift Guardians — home page">
+      <img src="../static/img/symbol.png" width="32" height="32" alt="">
+      <span>Rift Guardians</span>
+    </a>
+    <nav aria-label="Main menu">
+      <ul class="menu"><li><a href="index.html">Home</a></li><li><a href="download.html">Download</a></li><li><a href="how-to-play.html">How to play</a></li><li><a href="news.html">News</a></li><li><a href="support.html">Support</a></li></ul>
+    </nav>
+    <a class="idioma" href="../creditos.html" lang="pt-BR" hreflang="pt-BR" aria-label="Ler esta página em português">Português</a>
+  </div>
+</header>
+<main id="conteudo" class="largura" tabindex="-1">
+<h1 id="credits-and-licences">Credits and licences</h1>
+<h2 id="who-made-it">Who made it</h2>
+<p><strong>Rift Guardians</strong> is a free independent game by <strong>Vitor Moura</strong> (Brazil): creation, direction, game design, art references and testing.</p>
+<p>© 2026 Vitor Moura. The game, its name, logo, art, sounds and texts belong to the author.</p>
+<h2 id="ia">How the game was made — and where AI came in</h2>
+<p>We prefer to say it plainly:</p>
+<ul><li><strong>Commanders.</strong> The ten commanders were modelled in 3D <strong>with the help of artificial intelligence</strong> (the Meshy service), from the author's character sheets and references. The models were then animated, adjusted and turned into pixel-art sprites by the project's own tools.</li><li><strong>Guardians.</strong> Four guardians (Rune Scribe, Sporeling, Frost Lynx and Dew Dragonfly) went through the same AI-assisted process. The rest are drawn by code.</li><li><strong>Scenery, enemies, bosses, visual effects, interface and logo</strong> are <strong>drawn by code</strong> written for the game, with no ready-made images from third parties.</li><li><strong>Sounds and music</strong> are <strong>synthesized by code</strong> inside the game itself. There are no recordings or third-party music.</li><li><strong>Code.</strong> The code of the game, the server and this site was written <strong>with the help of AI</strong> (the Claude coding assistant, by Anthropic), under the author's direction and review.</li><li><strong>Texts and translation.</strong> The texts of the game and of this site, and the English translation, were written with the help of AI, under the author's direction.</li></ul>
+<p>We do not use players' data to train AI models.</p>
+<h2 id="engine">Engine</h2>
+<ul><li><strong>Unity 6</strong> (version 6000.5.3f1), used under the Unity Personal licence. <em>Unity</em> is a trademark of Unity Technologies. This game is not sponsored or endorsed by Unity Technologies.</li></ul>
+<p>Unity packages included in the game, distributed under Unity's own licences (Unity Companion License):</p>
+<div class="tabela larga" tabindex="0" role="region" aria-label="Package · Use"><table><thead><tr><th scope="col">Package</th><th scope="col">Use</th></tr></thead><tbody><tr><td>Universal Render Pipeline (<code>com.unity.render-pipelines.universal</code> 17.6.0)</td><td>2D rendering and post-processing</td></tr><tr><td>Input System (<code>com.unity.inputsystem</code> 1.19.0)</td><td>Keyboard and mouse</td></tr><tr><td>2D Sprite, 2D Animation, 2D Tilemap, 2D Tilemap Extras, 2D Aseprite Importer</td><td>The engine's 2D features</td></tr><tr><td>Unity UI (<code>com.unity.ugui</code> 2.5.0), Timeline (<code>com.unity.timeline</code> 1.8.12)</td><td>Project dependencies</td></tr></tbody></table></div>
+<h2 id="font">Font</h2>
+<ul><li><strong>Pixelify Sans</strong> — Copyright 2021 The Pixelify Sans Project Authors (github.com/eifetx/Pixelify-Sans). Licensed under the <strong>SIL Open Font License 1.1</strong>. Used in the game's interface and in the headings of this site. The licence text ships with the game and with <a href="../static/fonts/PixelifySans-OFL.txt">this site</a>.</li></ul>
+<h2 id="other-components-of-the-game">Other components of the game</h2>
+<ul><li><strong>SQLite</strong> — local progress is stored with the SQLite library that already ships with Windows (<code>winsqlite3.dll</code>). SQLite is in the public domain.</li><li><strong>IL2CPP and .NET libraries</strong> — part of Unity and distributed with the game under the licences of Unity and the .NET Foundation (MIT).</li></ul>
+<h2 id="server">Server</h2>
+<p>The game server is not distributed, but it is only fair to name what it uses:</p>
+<ul><li><strong>.NET 10 / ASP.NET Core</strong> — Microsoft and the .NET Foundation, MIT licence.</li><li><strong>Npgsql</strong> — PostgreSQL licence.</li><li><strong>Microsoft.Data.Sqlite</strong> — MIT licence.</li><li><strong>PostgreSQL</strong> — PostgreSQL licence.</li><li><strong>Caddy</strong> — Apache 2.0 licence.</li><li><strong>Docker</strong> (container engine) — Apache 2.0 licence.</li></ul>
+<h2 id="tools">Tools</h2>
+<ul><li><strong>Meshy</strong> — generation of the 3D models of the commanders and of four guardians.</li><li><strong>Claude (Anthropic)</strong> — coding and writing assistant.</li><li><strong>Python</strong> and <strong>Pillow</strong> — build tools for the project and this site.</li></ul>
+<h2 id="hosting">Hosting</h2>
+<ul><li>Game server: Hostinger (São Paulo, Brazil).</li><li>Download: itch.io and GitHub.</li><li>Site and status file: GitHub Pages.</li></ul>
+<h2 id="thanks">Thanks</h2>
+<p>To everyone who tested the game, reported bugs and made suggestions.</p>
+<p>Found something of yours here without proper credit, or a licence described wrongly? Write to <a href="mailto:contato@riftguardians.tech">contato@riftguardians.tech</a> and we will fix it.</p>
+<p class="doc-versao">Version 1.0 · 11 October 2026</p>
+</main>
+<footer class="rodape">
+  <div class="largura">
+    <ul class="rodape-links"><li><a href="windows-warning.html">Windows warning</a></li><li><a href="status.html">Server status</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms of use</a></li><li><a href="conduct.html">Code of conduct</a></li><li><a href="credits.html">Credits and licenses</a></li></ul>
+    <p>Contact: <a href="mailto:contato@riftguardians.tech">contato@riftguardians.tech</a></p>
+    <p class="fraco">Rift Guardians is a free game made by Vitor Moura. This site uses no cookies, ads or trackers.</p>
+    <p class="fraco">© 2026 Vitor Moura</p>
+  </div>
+</footer>
+
+</body>
+</html>

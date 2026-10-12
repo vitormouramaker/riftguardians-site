@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Server status — Rift Guardians</title>
+<meta name="description" content="Current status of the Rift Guardians online services, read from the public status file.">
+<meta name="referrer" content="no-referrer">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1513">
+<link rel="icon" href="../static/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../static/img/icon_32.png">
+<link rel="apple-touch-icon" href="../static/img/icon_256.png">
+<link rel="stylesheet" href="../static/css/site.css">
+</head>
+<body class="pagina-estado">
+<a class="pular" href="#conteudo">Skip to content</a>
+<p class="rascunho" role="note">Pre-release: 3 configuration values are missing (see site/README.md).</p>
+<header class="topo">
+  <div class="largura topo-linha">
+    <a class="marca" href="index.html" aria-label="Rift Guardians — home page">
+      <img src="../static/img/symbol.png" width="32" height="32" alt="">
+      <span>Rift Guardians</span>
+    </a>
+    <nav aria-label="Main menu">
+      <ul class="menu"><li><a href="index.html">Home</a></li><li><a href="download.html">Download</a></li><li><a href="how-to-play.html">How to play</a></li><li><a href="news.html">News</a></li><li><a href="support.html">Support</a></li></ul>
+    </nav>
+    <a class="idioma" href="../estado.html" lang="pt-BR" hreflang="pt-BR" aria-label="Ler esta página em português">Português</a>
+  </div>
+</header>
+<main id="conteudo" class="largura" tabindex="-1">
+<h1 id="server-status">Server status</h1>
+<div id="estado" class="estado-caixa" data-url="https://vitormouramaker.github.io/riftguardians-status/estado.json" aria-live="polite">
+<p class="estado-titulo">Status not loaded</p>
+<p>This page uses a small script to read the public status file. If it did not run in your browser, open the file directly using the link below.</p>
+</div>
+<p><a href="https://vitormouramaker.github.io/riftguardians-status/estado.json" rel="noopener noreferrer">Open the status file (estado.json)</a></p>
+<h2 id="what-this-page-shows">What this page shows</h2>
+<p>The installed game reads a small public file to learn the server address, the newest version and whether there is maintenance. This page reads <strong>the same file</strong> and shows its contents as text. It is hosted outside the game server, so it stays available even when the server is down.</p>
+<div class="tabela larga" tabindex="0" role="region" aria-label="Status · What it means · What keeps working"><table><thead><tr><th scope="col">Status</th><th scope="col">What it means</th><th scope="col">What keeps working</th></tr></thead><tbody><tr><td>Working</td><td>Online account, PvP, friends and mail are up.</td><td>Everything.</td></tr><tr><td>Under maintenance</td><td>The server is closed for a while.</td><td>The campaign. Progress is sent when the server is back.</td></tr><tr><td>Full</td><td>There are more people than the machine can handle right now.</td><td>The campaign and, for those already in, the online account.</td></tr><tr><td>Online PvP paused</td><td>The Duel and Arena queue is switched off.</td><td>Campaign, online account, friends and mail.</td></tr></tbody></table></div>
+<h2 id="honest-limits">Honest limits</h2>
+<ul><li>The file is updated <strong>by hand</strong>. A sudden outage may take some time to show up here.</li><li>The server is a small machine looked after by one person. An outage in the middle of the night (Brazil time) may wait until morning.</li><li>This page does not check the file's digital signature (the game does). It is for information only.</li><li>The file is encoded; if you open it directly you will see base64 text. The script on this page only decodes and displays it.</li></ul>
+<p>When you check the status, your browser makes a request to GitHub Pages, which hosts the file. GitHub receives your IP address, like any site you visit. This page uses no cookies and stores nothing in your browser.</p>
+<p>If the status says "Working" and you still cannot play online, see <a href="support.html">Support</a>.</p>
+
+</main>
+<footer class="rodape">
+  <div class="largura">
+    <ul class="rodape-links"><li><a href="windows-warning.html">Windows warning</a></li><li><a href="status.html">Server status</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms of use</a></li><li><a href="conduct.html">Code of conduct</a></li><li><a href="credits.html">Credits and licenses</a></li></ul>
+    <p>Contact: <a href="mailto:contato@riftguardians.tech">contato@riftguardians.tech</a></p>
+    <p class="fraco">Rift Guardians is a free game made by Vitor Moura. This site uses no cookies, ads or trackers.</p>
+    <p class="fraco">© 2026 Vitor Moura</p>
+  </div>
+</footer>
+<script src="../static/js/estado.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Suporte e perguntas frequentes — Rift Guardians</title>
+<meta name="description" content="Perguntas frequentes do Rift Guardians: conta presa ao computador, jogar sem internet, servidor em manutenção, PvP, onde fica o save e como relatar um erro.">
+<meta name="referrer" content="no-referrer">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1513">
+<link rel="icon" href="static/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="static/img/icon_32.png">
+<link rel="apple-touch-icon" href="static/img/icon_256.png">
+<link rel="stylesheet" href="static/css/site.css">
+</head>
+<body class="pagina-suporte">
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<p class="rascunho" role="note">Pré-publicação: faltam 3 valores de configuração (veja site/README.md).</p>
+<header class="topo">
+  <div class="largura topo-linha">
+    <a class="marca" href="index.html" aria-label="Rift Guardians — página inicial">
+      <img src="static/img/symbol.png" width="32" height="32" alt="">
+      <span>Rift Guardians</span>
+    </a>
+    <nav aria-label="Menu principal">
+      <ul class="menu"><li><a href="index.html">Início</a></li><li><a href="baixar.html">Baixar</a></li><li><a href="como-jogar.html">Como jogar</a></li><li><a href="novidades.html">Novidades</a></li><li><a href="suporte.html" aria-current="page">Suporte</a></li></ul>
+    </nav>
+    <a class="idioma" href="en/support.html" lang="en" hreflang="en" aria-label="Read this page in English">English</a>
+  </div>
+</header>
+<main id="conteudo" class="largura" tabindex="-1">
+<h1 id="suporte-e-perguntas-frequentes">Suporte e perguntas frequentes</h1>
+<p>O Rift Guardians é feito e mantido por uma pessoa. Respondemos assim que dá; uma mensagem enviada de madrugada espera o dia seguinte.</p>
+<ul><li>E-mail: <a href="mailto:contato@riftguardians.tech">contato@riftguardians.tech</a></li><li>Discord: <span class="falta">entrar na comunidade <mark>{{DISCORD_URL}}</mark></span></li><li><a href="estado.html">Estado do servidor</a></li></ul>
+<h2 id="conta">Conta</h2>
+<h3 id="como-a-conta-e-criada">Como a conta é criada?</h3>
+<p>Na primeira vez que você abre o jogo com internet e aceita os termos, o jogo cria uma <strong>chave</strong> no seu computador e registra uma conta no servidor com ela. Não pedimos e-mail nem senha. Seu nome de exibição começa como "Guardião" e pode ser trocado no perfil.</p>
+<h3 id="troquei-de-computador-ou-formatei-e-a-minha-conta">Troquei de computador ou formatei. E a minha conta?</h3>
+<p>Hoje a conta fica <strong>presa ao computador (e ao usuário do Windows) onde foi criada</strong>. A chave é guardada cifrada para aquele usuário do Windows; copiar os arquivos para outro computador não leva a conta junto.</p>
+<p>Isso quer dizer que, <strong>se você formatar o computador, trocar de máquina ou perder o acesso àquele usuário do Windows, a conta online não pode ser recuperada hoje</strong>. Não temos como devolvê-la por e-mail, porque não guardamos nenhum dado que prove quem você é.</p>
+<p>Estamos trabalhando em códigos para transferir e recuperar a conta. <strong>Ainda não existem e não temos data para prometer.</strong> Quando existirem, avisaremos nas <a href="novidades.html">Novidades</a>.</p>
+<h3 id="reinstalar-ou-atualizar-o-jogo-apaga-a-conta">Reinstalar ou atualizar o jogo apaga a conta?</h3>
+<p>Não. O progresso e a chave da conta ficam fora da pasta do jogo, na pasta de dados do seu usuário do Windows:</p>
+<pre tabindex="0"><code>%USERPROFILE%\AppData\LocalLow\Vitor Moura\Rift Guardians</code></pre>
+<p>Atualizar, reinstalar ou trocar a pasta do jogo não mexe nessa pasta. Se você apagar essa pasta, perde o progresso local e a chave da conta deste computador.</p>
+<h3 id="como-vejo-exporto-ou-apago-meus-dados">Como vejo, exporto ou apago meus dados?</h3>
+<p>No jogo, em <strong>Configurações → Conta online</strong>:</p>
+<ul><li><strong>Baixar meus dados</strong> grava um arquivo com tudo o que o servidor guarda sobre a sua conta.</li><li><strong>Excluir minha conta online</strong> apaga a conta do servidor, depois de duas confirmações. Não tem volta.</li></ul>
+<p>Mais detalhes na <a href="privacidade.html">Política de Privacidade</a>.</p>
+<h2 id="jogar-sem-internet">Jogar sem internet</h2>
+<h3 id="da-para-jogar-sem-internet">Dá para jogar sem internet?</h3>
+<p>Sim. A campanha inteira funciona sem internet. O que você jogar fica numa fila no seu computador e é enviado ao servidor quando a conexão voltar.</p>
+<h3 id="o-que-precisa-de-internet">O que precisa de internet?</h3>
+<p>A conta online, o PvP online, os amigos, os desafios e o correio do jogo.</p>
+<h3 id="joguei-sem-internet-e-o-progresso-nao-apareceu-na-conta-online">Joguei sem internet e o progresso não apareceu na conta online.</h3>
+<p>O envio acontece sozinho quando o jogo consegue falar com o servidor. Abra o jogo com internet e espere um pouco no lobby; em <strong>Configurações → Conta online</strong> dá para ver a fila e pedir para sincronizar. O servidor confere cada fase refazendo a partida, então fases muito antigas ou de uma versão anterior do jogo podem ser recusadas.</p>
+<h2 id="servidor">Servidor</h2>
+<h3 id="o-jogo-diz-servidor-em-manutencao-servidor-lotado-ou-pvp-online-pausado">O jogo diz "Servidor em manutenção", "Servidor lotado" ou "PvP online pausado".</h3>
+<p>É um aviso nosso, não um defeito no seu computador. A campanha continua funcionando e o seu progresso sobe quando o servidor voltar. Veja o <a href="estado.html">Estado do servidor</a> para saber mais.</p>
+<h3 id="o-jogo-diz-para-atualizar">O jogo diz para atualizar.</h3>
+<p>Saiu uma versão nova. Baixe pela <a href="baixar.html">página Baixar</a> e instale por cima: o progresso não é apagado. Quando a atualização muda as regras do jogo, os modos online só voltam depois de atualizar; a campanha continua jogável.</p>
+<h3 id="nao-consigo-entrar-em-partidas-de-pvp-online">Não consigo entrar em partidas de PvP online.</h3>
+<ul><li>Confira o <a href="estado.html">Estado do servidor</a>.</li><li>O PvP usa a porta <strong>UDP 7778</strong>. Redes de escola, trabalho ou lan house, e alguns firewalls, bloqueiam esse tipo de tráfego. Teste em outra rede se puder.</li><li>Os modos online abrem conforme o nível da conta; o jogo mostra o nível pedido em cada cartão.</li></ul>
+<h3 id="minha-conexao-caiu-no-meio-de-uma-partida-de-pvp">Minha conexão caiu no meio de uma partida de PvP.</h3>
+<p>Você tem 90 segundos para voltar: abra o jogo e use o cartão "Voltar à partida" no lobby. Depois desse tempo a partida conta como abandono, e abandonos repetidos aumentam a espera para entrar na fila.</p>
+<h2 id="instalacao">Instalação</h2>
+<h3 id="o-windows-mostrou-um-aviso-azul-ao-abrir-o-jogo">O Windows mostrou um aviso azul ao abrir o jogo.</h3>
+<p>É esperado. Veja a página <a href="ajuda-windows.html">O aviso do Windows</a>.</p>
+<h3 id="meu-antivirus-bloqueou-o-jogo">Meu antivírus bloqueou o jogo.</h3>
+<p>Não desligue o antivírus. Veja <a href="ajuda-windows.html#se-o-antivirus-reclamar">o que fazer</a> e avise a gente.</p>
+<h3 id="como-desinstalo">Como desinstalo?</h3>
+<p>Em <strong>Configurações do Windows → Aplicativos → Aplicativos instalados</strong>, procure Rift Guardians. Se você usou a versão portátil (.zip), basta apagar a pasta do jogo. Desinstalar não apaga a conta do servidor: para isso use <strong>Excluir minha conta online</strong> dentro do jogo, antes de desinstalar.</p>
+<h2 id="como-relatar-um-erro">Como relatar um erro</h2>
+<p>Um bom relato poupa várias mensagens de ida e volta. Mande para o e-mail ou para o Discord:</p>
+<ol><li><strong>A versão do jogo</strong>, que aparece no canto do lobby e nas Configurações.</li><li><strong>O que você estava fazendo</strong>: fase, comandante, modo (campanha, Heroico, Duelo, Arena).</li><li><strong>O que aconteceu</strong> e o que você esperava que acontecesse.</li><li>Uma <strong>captura de tela</strong>, se der.</li><li>Se o jogo fechou sozinho ou travou, o arquivo de registro <code>Player.log</code>, que fica na pasta de dados mostrada acima.</li></ol>
+<p>Antes de enviar o <code>Player.log</code>, saiba que ele contém informações técnicas do seu computador (modelo da placa de vídeo, versão do Windows, caminhos de pastas com o nome do seu usuário). Não envie os arquivos <code>online.json</code> nem <code>profiles.db</code>: eles não ajudam no diagnóstico e contêm a chave e o progresso da sua conta.</p>
+<h2 id="denunciar-um-nome-ofensivo">Denunciar um nome ofensivo</h2>
+<p>Mande para o e-mail de contato o <strong>código de amigo</strong> ou o nome do jogador e, se possível, uma captura de tela. Veja as <a href="conduta.html">Regras de conduta</a>.</p>
+
+</main>
+<footer class="rodape">
+  <div class="largura">
+    <ul class="rodape-links"><li><a href="ajuda-windows.html">Aviso do Windows</a></li><li><a href="estado.html">Estado do servidor</a></li><li><a href="privacidade.html">Privacidade</a></li><li><a href="termos.html">Termos de uso</a></li><li><a href="conduta.html">Regras de conduta</a></li><li><a href="creditos.html">Créditos e licenças</a></li></ul>
+    <p>Contato: <a href="mailto:contato@riftguardians.tech">contato@riftguardians.tech</a></p>
+    <p class="fraco">Rift Guardians é um jogo gratuito feito por Vitor Moura. Este site não usa cookies, anúncios nem rastreadores.</p>
+    <p class="fraco">© 2026 Vitor Moura</p>
+  </div>
+</footer>
+
+</body>
+</html>

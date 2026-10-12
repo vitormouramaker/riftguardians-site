@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Baixar — Rift Guardians</title>
+<meta name="description" content="Baixe o Rift Guardians para Windows, gratuito. Versão atual, tamanho, requisitos e código SHA-256 para conferir o arquivo.">
+<meta name="referrer" content="no-referrer">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1513">
+<link rel="icon" href="static/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="static/img/icon_32.png">
+<link rel="apple-touch-icon" href="static/img/icon_256.png">
+<link rel="stylesheet" href="static/css/site.css">
+</head>
+<body class="pagina-baixar">
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<p class="rascunho" role="note">Pré-publicação: faltam 3 valores de configuração (veja site/README.md).</p>
+<header class="topo">
+  <div class="largura topo-linha">
+    <a class="marca" href="index.html" aria-label="Rift Guardians — página inicial">
+      <img src="static/img/symbol.png" width="32" height="32" alt="">
+      <span>Rift Guardians</span>
+    </a>
+    <nav aria-label="Menu principal">
+      <ul class="menu"><li><a href="index.html">Início</a></li><li><a href="baixar.html" aria-current="page">Baixar</a></li><li><a href="como-jogar.html">Como jogar</a></li><li><a href="novidades.html">Novidades</a></li><li><a href="suporte.html">Suporte</a></li></ul>
+    </nav>
+    <a class="idioma" href="en/download.html" lang="en" hreflang="en" aria-label="Read this page in English">English</a>
+  </div>
+</header>
+<main id="conteudo" class="largura" tabindex="-1">
+<h1 id="baixar">Baixar</h1>
+<p>O Rift Guardians é gratuito. O arquivo fica hospedado no itch.io e num espelho no GitHub: é o mesmo arquivo nos dois lugares.</p>
+<p><span class="botao falta">Baixar pelo itch.io <mark>{{ITCH_URL}}</mark></span> <span class="botao-2 falta">Espelho no GitHub <mark>{{GITHUB_RELEASES_URL}}</mark></span></p>
+<blockquote class="nota"><p><strong>O Windows vai mostrar um aviso azul</strong> ("O Windows protegeu o computador") ao abrir o jogo pela primeira vez. Isso acontece porque o jogo não tem assinatura digital paga. <a href="ajuda-windows.html">Veja o passo a passo e por que aparece</a>.</p></blockquote>
+<h2 id="versao-atual">Versão atual</h2>
+<div class="tabela"><table><tbody><tr><th scope="row">Versão</th><td>0.9.0</td></tr><tr><th scope="row">Data</th><td>11 de outubro de 2026</td></tr><tr><th scope="row">Novidades</th><td><a href="novidades.html">O que mudou</a></td></tr></tbody></table></div>
+<h3 id="instalador">Instalador</h3>
+<div class="tabela"><table><tbody><tr><th scope="row">Arquivo</th><td><code>RiftGuardians-0.9.0-setup.exe</code></td></tr><tr><th scope="row">Tamanho</th><td>40,5 MB</td></tr><tr><th scope="row">SHA-256</th><td><code>1560cb1f16d32ee5a023b57750753bdd148357d73922f16bf778491e806f8673</code></td></tr></tbody></table></div>
+<p>Instala na sua pasta de usuário, sem pedir senha de administrador. Para atualizar, rode o instalador novo por cima: o progresso salvo não é apagado.</p>
+<h3 id="versao-portatil-zip">Versão portátil (.zip)</h3>
+<div class="tabela"><table><tbody><tr><th scope="row">Arquivo</th><td><code>RiftGuardians-0.9.0-win64.zip</code></td></tr><tr><th scope="row">Tamanho</th><td>56,4 MB</td></tr><tr><th scope="row">SHA-256</th><td><code>374d59cfeeed4bc3035248752de3ebc8c79cd872a9719fbf24986f1561e40310</code></td></tr></tbody></table></div>
+<p>Sem instalador: descompacte numa pasta e abra <code>RiftGuardians.exe</code>. Usa o mesmo progresso salvo do instalador. É a melhor opção se o seu antivírus implicar com o instalador.</p>
+<h3 id="pelo-aplicativo-do-itch-io">Pelo aplicativo do itch.io</h3>
+<p>Quem instala o <a href="https://itch.io/app" rel="noopener noreferrer">aplicativo do itch.io</a> pode baixar o jogo por ele. O aplicativo instala e atualiza o jogo sozinho.</p>
+<h2 id="como-conferir-o-arquivo">Como conferir o arquivo</h2>
+<p>O código SHA-256 prova que o arquivo que você baixou é igual ao que publicamos. No Windows, abra o PowerShell na pasta do download e rode:</p>
+<pre tabindex="0"><code>Get-FileHash .\RiftGuardians-0.9.0-setup.exe -Algorithm SHA256</code></pre>
+<p>Compare o resultado com o código desta página (maiúsculas e minúsculas não importam). Se for diferente, não abra o arquivo e <a href="suporte.html">avise a gente</a>. A <a href="ajuda-windows.html#conferir">página de ajuda</a> explica com mais calma.</p>
+<h2 id="requisitos">Requisitos</h2>
+<div class="tabela"><table><tbody><tr><th scope="row">Sistema</th><td>Windows 10 ou 11, 64 bits</td></tr><tr><th scope="row">Processador</th><td>a medir</td></tr><tr><th scope="row">Memória</th><td>a medir</td></tr><tr><th scope="row">Placa de vídeo</th><td>a medir</td></tr><tr><th scope="row">Espaço em disco</th><td>cerca de 520 MB livres (medido na versão de desenvolvimento; a confirmar no instalador)</td></tr><tr><th scope="row">Internet</th><td>Não é necessária para a campanha. Os modos online precisam de internet; o PvP usa a porta UDP 7778.</td></tr></tbody></table></div>
+<p>Os itens marcados "a medir" ainda não foram testados em máquinas fracas. Não vamos publicar um número que não medimos.</p>
+<h2 id="antes-de-jogar">Antes de jogar</h2>
+<ul><li>Ao instalar e jogar você concorda com os <a href="termos.html">Termos de Uso</a> e com a <a href="privacidade.html">Política de Privacidade</a>.</li><li>Se você tem menos de 18 anos, peça para um responsável ler esses dois textos com você.</li><li>Baixe só pelos endereços desta página. Não distribuímos o jogo por outros sites.</li></ul>
+
+</main>
+<footer class="rodape">
+  <div class="largura">
+    <ul class="rodape-links"><li><a href="ajuda-windows.html">Aviso do Windows</a></li><li><a href="estado.html">Estado do servidor</a></li><li><a href="privacidade.html">Privacidade</a></li><li><a href="termos.html">Termos de uso</a></li><li><a href="conduta.html">Regras de conduta</a></li><li><a href="creditos.html">Créditos e licenças</a></li></ul>
+    <p>Contato: <a href="mailto:contato@riftguardians.tech">contato@riftguardians.tech</a></p>
+    <p class="fraco">Rift Guardians é um jogo gratuito feito por Vitor Moura. Este site não usa cookies, anúncios nem rastreadores.</p>
+    <p class="fraco">© 2026 Vitor Moura</p>
+  </div>
+</footer>
+
+</body>
+</html>

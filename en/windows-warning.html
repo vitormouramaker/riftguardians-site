@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Help: the Windows warning — Rift Guardians</title>
+<meta name="description" content="Why Windows shows a blue warning when you open Rift Guardians, how to continue, how to verify the file and what to do if your antivirus complains.">
+<meta name="referrer" content="no-referrer">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1513">
+<link rel="icon" href="../static/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../static/img/icon_32.png">
+<link rel="apple-touch-icon" href="../static/img/icon_256.png">
+<link rel="stylesheet" href="../static/css/site.css">
+</head>
+<body class="pagina-ajuda-windows">
+<a class="pular" href="#conteudo">Skip to content</a>
+<p class="rascunho" role="note">Pre-release: 3 configuration values are missing (see site/README.md).</p>
+<header class="topo">
+  <div class="largura topo-linha">
+    <a class="marca" href="index.html" aria-label="Rift Guardians — home page">
+      <img src="../static/img/symbol.png" width="32" height="32" alt="">
+      <span>Rift Guardians</span>
+    </a>
+    <nav aria-label="Main menu">
+      <ul class="menu"><li><a href="index.html">Home</a></li><li><a href="download.html">Download</a></li><li><a href="how-to-play.html">How to play</a></li><li><a href="news.html">News</a></li><li><a href="support.html">Support</a></li></ul>
+    </nav>
+    <a class="idioma" href="../ajuda-windows.html" lang="pt-BR" hreflang="pt-BR" aria-label="Ler esta página em português">Português</a>
+  </div>
+</header>
+<main id="conteudo" class="largura" tabindex="-1">
+<h1 id="the-windows-warning-when-you-open-the-game">The Windows warning when you open the game</h1>
+<h2 id="summary">Summary</h2>
+<p>Windows shows a warning the first time you open the installer (or the game) because Rift Guardians is a free game made by one person and has no <strong>digital signature</strong>, which is a service paid for every year. The warning does not say there is a virus: it says Windows does not know this file yet.</p>
+<p>To continue: click <strong>More info</strong> and then <strong>Run anyway</strong>.</p>
+<p>If you would rather not just take our word for it, you can <a href="#conferir">verify the file's SHA-256 code</a> or <a href="#itch">install through the itch.io app</a>.</p>
+<h2 id="step-by-step">Step by step</h2>
+<div class="passos">
+<figure><img src="../static/img/aviso_windows_1.png" width="820" height="530" loading="lazy" alt="Drawing of the first warning screen, with labels in Portuguese: a blue window titled Windows protected your PC, with the More info text highlighted and a Don't run button."><figcaption><strong>Screen 1.</strong> A blue window, "Windows protected your PC". Only the "Don't run" button is shown. Click the small text <strong>More info</strong> ("Mais informações" in the drawing).</figcaption></figure>
+<figure><img src="../static/img/aviso_windows_2.png" width="820" height="530" loading="lazy" alt="Drawing of the second warning screen, with labels in Portuguese: the app name, Unknown publisher and the Run anyway button highlighted."><figcaption><strong>Screen 2.</strong> The file name, "Unknown publisher" and the <strong>Run anyway</strong> button appear ("Executar assim mesmo" in the drawing). Click it.</figcaption></figure>
+</div>
+<p class="foto-real">The images above are <strong>illustrative drawings</strong> with Portuguese labels, not screenshots. We will replace them with real photos after testing on computers with a freshly installed Windows. The wording may vary a little with your Windows version and language.</p>
+<p>Before that, your browser may also warn that "this file is not commonly downloaded". If that happens, choose <strong>Keep</strong> (the wording depends on the browser).</p>
+<h2 id="why-the-warning-appears">Why the warning appears</h2>
+<ul><li>The Windows filter (Microsoft Defender SmartScreen) trusts programs by <strong>history</strong>: a new file that few people have opened is shown as "unrecognized".</li><li>A <strong>signed</strong> program carries its publisher's name and builds that history from one version to the next. The signature is a paid certificate, renewed every year. Rift Guardians is free and has no revenue, so today we do not have that certificate.</li><li>Without a signature, <strong>each new version is a new file</strong> to Windows. The warning comes back when you update.</li><li>"Unknown publisher" means exactly that: the file has no signature. It is not the result of an analysis of its contents.</li></ul>
+<p>The warning exists for a good reason and we are not asking you to ignore it blindly. Download the game only from the addresses on the <a href="download.html">Download page</a> and, if you want to be sure, verify the file.</p>
+<h2 id="conferir">How to verify the file (SHA-256)</h2>
+<p>SHA-256 is a code calculated from the file. If a single byte changes, the code changes. We publish the code of each file on the <a href="download.html">Download page</a>.</p>
+<ol><li>Open the folder where the file was downloaded (usually <strong>Downloads</strong>).</li><li>Right-click an empty area of the folder and choose <strong>Open in Terminal</strong> (on Windows 10: hold Shift, right-click and choose <strong>Open PowerShell window here</strong>).</li><li>Type the command shown just below, changing the name if your file is a different one, and press Enter.</li><li>Compare the code shown in the <strong>Hash</strong> column with the one on the Download page. Upper and lower case do not matter.</li></ol>
+<pre tabindex="0"><code>Get-FileHash .\RiftGuardians-0.9.0-setup.exe -Algorithm SHA256</code></pre>
+<p>If the code is <strong>the same</strong>, the file is exactly what we published. If it is <strong>different</strong>, do not open it: delete it, download it again from the official link and, if it is still different, <a href="support.html">contact us</a>.</p>
+<h2 id="itch">Installing through the itch.io app</h2>
+<p>The <a href="https://itch.io/app" rel="noopener noreferrer">itch.io app</a> is itch.io's own program for downloading, installing and updating games. You install the app once, find Rift Guardians in it and click install.</p>
+<p>We have not yet measured whether the Windows warning stops appearing for people who install this way. Once we have tested it, this page will say what we found.</p>
+<h2 id="there-is-no-button-to-continue">There is no button to continue</h2>
+<p>On computers running Windows 11 with <strong>Smart App Control</strong> turned on, Windows may block the game without offering the "Run anyway" button. This feature blocks unsigned programs that are not yet well known.</p>
+<p>Only you can decide what to do with your computer's protections. The feature is under <strong>Windows Security → App &amp; browser control → Smart App Control</strong>. On some Windows versions, once turned off it cannot be turned back on without reinstalling the system — read the explanation Windows itself shows before changing anything. If you do not want to change it, don't: we hope to be able to sign the game in the future.</p>
+<h2 id="se-o-antivirus-reclamar">If your antivirus complains</h2>
+<p>Unsigned games made with Unity are sometimes flagged by mistake.</p>
+<ul><li><strong>Do not turn off your antivirus.</strong> We will never ask you to.</li><li>Verify the <a href="#conferir">SHA-256</a> of the file you downloaded.</li><li>Try the <strong>portable version (.zip)</strong> from the <a href="download.html">Download page</a>: it usually triggers fewer false alarms than the installer.</li><li><a href="support.html">Let us know</a> which antivirus, which message and which game version. With that we can send the file to the antivirus vendor as a false detection.</li></ul>
+<h2 id="the-honest-summary">The honest summary</h2>
+<ul><li>The blue warning will appear for everyone as long as the game has no digital signature.</li><li>It comes back with every new version.</li><li>You are not obliged to continue. If in doubt, do not install, and ask at <a href="support.html">support</a>.</li></ul>
+
+</main>
+<footer class="rodape">
+  <div class="largura">
+    <ul class="rodape-links"><li><a href="windows-warning.html">Windows warning</a></li><li><a href="status.html">Server status</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms of use</a></li><li><a href="conduct.html">Code of conduct</a></li><li><a href="credits.html">Credits and licenses</a></li></ul>
+    <p>Contact: <a href="mailto:contato@riftguardians.tech">contato@riftguardians.tech</a></p>
+    <p class="fraco">Rift Guardians is a free game made by Vitor Moura. This site uses no cookies, ads or trackers.</p>
+    <p class="fraco">© 2026 Vitor Moura</p>
+  </div>
+</footer>
+
+</body>
+</html>
